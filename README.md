@@ -1,70 +1,73 @@
 # 📒 Electronic Organizer
 
-Un **Organizador Electrónico** desarrollado en **C# .NET Framework** utilizando **Windows Forms** y una arquitectura **multicapa (4 capas)** con MySQL como base de datos.
+An **Electronic Organizer** developed in **C# .NET Framework** using **Windows Forms** and a **four-layer architecture** with MySQL as the database.
 
-## 🚀 Características
-- 📌 **CRUD Completo**: Insertar, modificar, buscar y eliminar registros.
-- 🖥 **Interfaz intuitiva**: Diseño amigable con Windows Forms.
-- 💾 **Base de Datos MySQL**: Almacenamiento seguro y eficiente.
-- 📂 **Arquitectura Multicapa**: Separación en **Capa de Datos, Capa de Negocios, Capa de Presentación y Capa de Entidades**.
-- 🔌 **Conexión optimizada**: Manejo de MySQL con `MySql.Data`.
+## 🚀 Features
+- 📌 **Complete CRUD**: Insert, modify, search, and delete records.
+- 🖥 **User-friendly interface**: Intuitive design with Windows Forms.
+- 💾 **MySQL Database**: Secure and efficient storage.
+- 📂 **Multi-layer Architecture**: Separation into **Data Layer, Business Layer, Presentation Layer, and Entity Layer**.
+- 🔌 **Optimized Connection**: MySQL handling with `MySql.Data`.
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Technologies Used
 - 🔹 C# (.NET Framework)
 - 🔹 Windows Forms
 - 🔹 MySQL
 - 🔹 MySQL Connector/NET
-- 🔹 Arquitectura Multicapa
+- 🔹 Multi-layer Architecture
 
-## 📸 Capturas de Pantalla
-_Agrega aquí imágenes de la interfaz de usuario._
+## 📸 Screenshots
+![Insert Records Interface](https://github.com/user-attachments/assets/5fe06e26-ed2b-4490-9d9b-19656a38aef3)
+![Modify Records Interface](https://github.com/user-attachments/assets/6c21b2f3-41cf-4dfe-9a72-97f66958e6d4)
+![Search Records Interface](https://github.com/user-attachments/assets/b21cca2a-533f-4ba4-bf8c-6c5403a074c8)
+![Delete Records Interface](https://github.com/user-attachments/assets/50d88f7b-7848-4dfd-a200-2aee4041680b)
+![Activate Records Interface](https://github.com/user-attachments/assets/6eb02047-720b-49de-bd74-620f1df74c87)
 
-## 📥 Instalación
-1. Clona el repositorio:
+## 📥 Installation
+1. Clone the repository:
    ```sh
    git clone https://github.com/tuusuario/Electronic-Organizer.git
    ```
-2. Abre el proyecto en **Visual Studio**.
-3. Restaura los paquetes NuGet necesarios.
-4. Configura la conexión a tu base de datos MySQL en `app.config`.
-5. Ejecuta los scripts SQL en tu servidor MySQL.
-6. Compila y ejecuta la aplicación.
+2. Open the project in **Visual Studio**.
+3. Restore the required NuGet packages.
+4. Configure the MySQL database connection in `app.config`.
+5. Execute the SQL scripts on your MySQL server.
+6. Compile and run the application.
 
-## 🛠 Configuración de la Base de Datos
-Ejecuta el siguiente script en MySQL para crear la base de datos y las tablas necesarias:
+## 🛠 Database Configuration
+Run the following SQL script in MySQL to create the database and necessary tables:
 
 ```sql
 CREATE DATABASE organizer;
 
 USE organizer;
 
--- CREAR LA TABLA AGENDA
+-- CREATE THE AGENDA TABLE
 
 CREATE TABLE agenda (
     ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    NOMBRE VARCHAR(45) NOT NULL,
-    APELLIDO VARCHAR(45) NOT NULL,
-    FECHA_NACIMIENTO DATE NOT NULL,
-    DIRECCION VARCHAR(50) NOT NULL,
-    GENERO VARCHAR(10) NOT NULL,
-    ESTADO_CIVIL VARCHAR(15) NOT NULL,
-    MOVIL VARCHAR(15) NOT NULL UNIQUE,
-    TELEFONO VARCHAR(15) NOT NULL UNIQUE,
-    CORREO_ELECTRONICO VARCHAR(50) NOT NULL UNIQUE,
-	ESTADO TINYINT NOT NULL DEFAULT 1
+    FIRST_NAME VARCHAR(45) NOT NULL,
+    LAST_NAME VARCHAR(45) NOT NULL,
+    BIRTH_DATE DATE NOT NULL,
+    ADDRESS VARCHAR(50) NOT NULL,
+    GENDER VARCHAR(10) NOT NULL,
+    MARITAL_STATUS VARCHAR(15) NOT NULL,
+    MOBILE VARCHAR(15) NOT NULL UNIQUE,
+    PHONE VARCHAR(15) NOT NULL UNIQUE,
+    EMAIL VARCHAR(50) NOT NULL UNIQUE,
+    STATUS TINYINT NOT NULL DEFAULT 1
 );
-
 ```
 
-## 🤝 Contribuciones
-¡Las contribuciones son bienvenidas! Para contribuir:
-1. Haz un **fork** del repositorio.
-2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza tus cambios y haz commit (`git commit -m 'Añadir nueva funcionalidad'`).
-4. Envía un **pull request**.
+## 🤝 Contributions
+Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/new-feature`).
+3. Make your changes and commit (`git commit -m 'Add new feature'`).
+4. Submit a **pull request**.
 
-## 📝 Licencia
-Este proyecto está bajo la licencia **MIT**. Consulta el archivo `LICENSE` para más detalles.
+## 📝 License
+This project is under the **MIT** license. See the `LICENSE` file for more details.
 
 ---
-_Desarrollado por [Emil Echavarria](https://github.com/EmilEchavarria)_ ✨
+_Developed by [Emil Echavarria](https://github.com/EmilEchavarria)_ ✨
