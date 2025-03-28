@@ -17,11 +17,11 @@ An **Electronic Organizer** developed in **C# .NET Framework** using **Windows F
 - 🔹 Multi-layer Architecture
 
 ## 📸 Screenshots
-![Insert Records Interface](https://github.com/user-attachments/assets/5fe06e26-ed2b-4490-9d9b-19656a38aef3)
-![Modify Records Interface](https://github.com/user-attachments/assets/6c21b2f3-41cf-4dfe-9a72-97f66958e6d4)
-![Search Records Interface](https://github.com/user-attachments/assets/b21cca2a-533f-4ba4-bf8c-6c5403a074c8)
-![Delete Records Interface](https://github.com/user-attachments/assets/50d88f7b-7848-4dfd-a200-2aee4041680b)
-![Activate Records Interface](https://github.com/user-attachments/assets/6eb02047-720b-49de-bd74-620f1df74c87)
+<img src="https://github.com/user-attachments/assets/5fe06e26-ed2b-4490-9d9b-19656a38aef3" width="300" />
+<img src="https://github.com/user-attachments/assets/6c21b2f3-41cf-4dfe-9a72-97f66958e6d4" width="300" />
+<img src="https://github.com/user-attachments/assets/b21cca2a-533f-4ba4-bf8c-6c5403a074c8" width="300" />
+<img src="https://github.com/user-attachments/assets/50d88f7b-7848-4dfd-a200-2aee4041680b" width="300" />
+<img src="https://github.com/user-attachments/assets/6eb02047-720b-49de-bd74-620f1df74c87" width="300" />
 
 ## 📥 Installation
 1. Clone the repository:
